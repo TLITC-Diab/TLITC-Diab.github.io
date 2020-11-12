@@ -10,8 +10,25 @@
     .font {
       font-family: "Trebuchet MS", sans-serif;
     }
+    .button {
+      color: white;
+      padding: 10px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background-color: black;
+      border: 2px solid grey
+    }
+    .button:hover {
+      background-color: green
+      color: white;
+    }
     h1 {
-    font-size: 40px;
+      font-size: 40px;
     }
     h2 {
       font-size: 30px;
@@ -31,7 +48,7 @@
       color: white;
     }
     a:hover {
-      color: dodgerblue;
+      color: white;
     }
     a:active {
       color: blue;
@@ -40,22 +57,10 @@
   <body class="font">
   <h1>DiabLive</h1>
     <div class="portal">
-      <form action="./contact.html" method="get">
-        <input type="submit" value="Contact"
-          name="Submit" id="frm1_submit" />
-      </form>
-      <form action="./nggyu.mp4" method="get">
-        <input type="submit" value="Great Websistes"
-          name="Submit" id="frm1_submit" />
-      </form>
-      <form action="./keyboardform" method="get">
-        <input type="submit" value="Custom Keyboard"
-          name="Submit" id="frm1_submit" />
-      </form>
-      <form action="./empty.html" method="get">
-        <input type="submit" value="[Empty]"
-          name="Submit" id="frm1_submit" />
-      </form>
+      <button class="button" onclick="window.location.href='./contact.html'">contact</a></button>
+      <button class="button" onclick="window.location.href='./nggyu.mp4'">Great Websites</a></button>
+      <button class="button" onclick="window.location.href='./keyboardform.html'">Custom Keyboards</a></button>
+      <button class="button" onclick="window.location.href='./empty.html'">[EMPTY]</a></button>
     </div>
   </body>
 </html>
