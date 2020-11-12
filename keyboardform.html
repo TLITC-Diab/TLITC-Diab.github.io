@@ -10,6 +10,23 @@
     .font {
       font-family: "Trebuchet MS", sans-serif;
     }
+    .button {
+      color: white;
+      padding: 10px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background-color: black;
+      border: 2px solid grey
+    }
+    .button:hover {
+      background-color: green
+      color: white;
+    }
     h1 {
     font-size: 40px;
     }
@@ -40,8 +57,6 @@
   <body class="font">
     <p> Fill Out The Form If You Intend To Have A Custom Keyboard Built You Could Also Send Me An Email Or A Message On Discord <p\>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScmfAEbwkwByccjvitU2RJdsnql9TVtVPCq-OHaN5e7a7yzcg/viewform?embedded=true" style = "position:absolute; left:80px; top:80px;" width="640" height="783" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    <form action="./index.html" method="get">
-    <input type="submit" value="Go Back" name="Submit" id="frm1_submit" />
-    </form>
+<button class="button" onclick="window.location.href='./index.html'">Go Back</a></button>
   </body>
 </html>
