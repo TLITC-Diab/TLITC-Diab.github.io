@@ -64,7 +64,10 @@
     <script>
     var video = document.getElementById('rickroll')
     video.currentTime = 85;
+    setTimeout(play, 5000)
+    function play() {
     video.play();
+    }
     setTimeout(redirect, 8000)
     function redirect() {
     location.href = 'https://docs.google.com/document/d/1Zh6dD7UuXIQs8rgFi6AhjXb_tO8QbkskUluRoQIwNns/edit';
