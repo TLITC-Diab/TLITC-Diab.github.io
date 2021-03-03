@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirect in 5 seconds</title>
+    <link rel="shortcut icon" href="./rickastley.png"/>
+
+  </head>
+  <style>
+    .font {
+      font-family: "Trebuchet MS", sans-serif;
+    }
+    .button {
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.75s;
+      cursor: pointer;
+      background-color: black;
+    }
+    .button:hover {
+      background-color: white;
+      color: black;
+    }
+    h1 {
+    font-size: 40px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+    body{
+      background-image: url('background.jpg');
+      color: white;
+      font-color: white;
+    }
+
+    a:link {
+      color: white;
+    }
+    a:visited {
+      color: white;
+    }
+    a:hover {
+      color: dodgerblue;
+    }
+    a:active {
+      color: blue;
+    }
+  </style>
+  <body class="font">
+
+    <video id="rickroll" controls="controls" width="600" height="300">
+        <source src="./nggyu.mp4" type="video/mp4" />
+    </video>
+
+    <script>
+    const currentLocation = window.location.href
+    console.log(currentLocation);
+    let urlParams = new URLSearchParams(currentLocation);
+    var video = document.getElementById('rickroll')
+    video.currentTime = 85;
+    setTimeout(play, 5000)
+    function play() {
+    video.play();
+    }
+    setTimeout(redirect, 0000)
+    function redirect() {
+    location.href = urlParams.get("url");
+    }
+    </script>
+
+    <button class="button" onclick="window.location.href='https://docs.google.com/document/d/1Zh6dD7UuXIQs8rgFi6AhjXb_tO8QbkskUluRoQIwNns/edit'">If You Arent Redirected</a></button>
+  </body>
+</html>
