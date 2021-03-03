@@ -57,16 +57,19 @@
   </style>
   <body class="font">
 
+    <video id="rickroll" controls="controls" width="600" height="300">
+        <source src="./nggyu.mp4" type="video/mp4" />
+    </video>
+
     <script>
+    var video = document.getElementById('rickroll')
+    video.currentTime = 85;
+    video.play();
     setTimeout(redirect, 8000)
     function redirect() {
     location.href = 'https://docs.google.com/document/d/1Zh6dD7UuXIQs8rgFi6AhjXb_tO8QbkskUluRoQIwNns/edit';
     }
     </script>
-
-    <video id="rickroll" autoplay="autoplay" controls="controls" width="600" height="300">
-        <source src="./nggyu.mp4" type="video/mp4" />
-    </video>
 
     <button class="button" onclick="window.location.href='https://docs.google.com/document/d/1Zh6dD7UuXIQs8rgFi6AhjXb_tO8QbkskUluRoQIwNns/edit'">If You Arent Redirected</a></button>
   </body>
