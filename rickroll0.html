@@ -62,18 +62,19 @@
     </video>
 
     <script>
-    const currentLocation = window.location.href
+    const currentLocation = window.location.hash
     console.log(currentLocation);
-    let urlParams = new URLSearchParams(currentLocation);
+    var redirecturl = currentLocation.slice(1)
+    console.log(redirecturl)
     var video = document.getElementById('rickroll')
     video.currentTime = 85;
     setTimeout(play, 5000)
     function play() {
     video.play();
     }
-    setTimeout(redirect, 0000)
+    setTimeout(redirect, 8000)
     function redirect() {
-    location.href = urlParams.get("url");
+    location.href = redirecturl;
     }
     </script>
 
